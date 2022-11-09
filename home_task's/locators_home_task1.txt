@@ -1,0 +1,99 @@
+File cheack///locators1.png
+
+//1
+XPATH
+//*[contains(text(),'v4.webdriver.io') and @href]
+CSS
+[href="http://v4.webdriver.io"]
+
+//2
+XPATH
+//*[contains(text(),'Each command')]
+//span/p[2]
+CSS
+span p:nth-child(4)
+
+//3
+XPATH
+//*[contains(text(),'Contribute') and @href]
+CSS
+ul.toc-headings li:nth-child(2)
+
+//4
+CSS
+header.postHeader a
+a.edit-page-link.button
+[href="https://github.com/webdriverio/webdriverio/edit/master/docs/API.md"]
+XPATH
+//header[@class='postHeader']/a
+
+//5,6,7
+XPATH
+//*[contains(text(),'Guide') and @href] 
+//*[contains(text(),'Help') and @href] 
+//*[contains(text(),'Blog') and @href]
+CSS
+.nav-site.nav-site-internal [href="/docs/gettingstarted.html"]
+.nav-site.nav-site-internal [href="/help.html"]
+.nav-site.nav-site-internal [href="/blog/"]
+
+SIDE MENU
+//1
+CSS
+div.navGroups div:nth-child(1)  h3
+XPATH
+//h3[contains(text(),'Introduction')]
+
+//2
+CSS
+.navGroup li:nth-child(1)
+XPATH
+//a[@class and contains(text(),'API Docs')]
+
+//3
+CSS
+div.navGroups div:nth-child(2) h3
+XPATH
+//h3[contains(text(),'Protocols')]
+
+//4
+CSS
+.navItem[href="/docs/api/webdriver.html"]
+XPATH
+//a[contains(text(),'Webdriver Protocol') and @class]
+
+//5
+CSS
+.navGroup li:nth-child(2)
+XPATH
+//a[contains(text(),'Appium') and @class]
+
+//6
+CSS
+.navGroup li:nth-child(3)
+XPATH
+//a[contains(text(),'JSON Wire Protocol') and @class]
+
+//7
+CSS
+.navGroup li:nth-child(4)
+XPATH
+//a[contains(text(),'Mobile JSON Wire Protocol') and @class]
+
+//8
+CSS
+.navGroup li:nth-child(5)
+XPATH
+//a[contains(text(),'Chromium') and @class]
+
+//9
+CSS
+.navGroup li:nth-child(6)
+XPATH
+//a[contains(text(),'Sauce Labs') and @class]
+
+//10
+CSS
+.navGroup li:nth-child(7)
+XPATH
+//a[contains(text(),'Selenium Standalone') and @class]

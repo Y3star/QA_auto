@@ -1,0 +1,75 @@
+/// locators2.png
+
+// Menu 1
+//1
+XPATH
+//section/div/h5[contains(text(),'Docs')]
+//h5 [text()='Docs']
+CSS
+section.sitemap div:nth-child(2) h5
+
+//2
+XPATH
+//footer//a [text()='Getting Started' and @href]
+CSS
+section.sitemap a[href="/docs/gettingstarted.html"]
+
+//3
+XPATH
+//footer//a [text()='API Reference' and @href]
+CSS
+section.sitemap a[href="/docs/api.html"]
+
+//4
+XPATH
+//footer//a [text()='Help' and @href]
+CSS
+section.sitemap a[href="/help.html"]
+
+// Menu 2
+//1
+XPATH
+//h5 [text()='Community']
+//section/div/h5[contains(text(),'Community')]
+CSS
+section.sitemap div:nth-child(3) h5
+
+//2
+XPATH
+//footer//a [text()='Stack Overflow' and @href]
+CSS
+section.sitemap a[href*="https://stackoverflow.com"]
+
+//3
+XPATH
+//footer//a [text()='Support Chat' and @href]
+CSS
+section.sitemap a[href*="https://gitter.im/webdriverio/webdriverio"]
+
+//4
+XPATH
+//footer//a [text()='Twitter' and @href]
+CSS
+section.sitemap a[href*="https://twitter.com/webdriverio"]
+
+
+// Menu 3 
+
+//1
+XPATH
+//section/div/h5[contains(text(),'More')]
+//h5 [text()='More']
+CSS
+section.sitemap div:nth-child(4) h5
+
+//2
+XPATH
+//footer//a[text()='Blog' and @href]
+CSS
+section.sitemap a[href*="/blog"]
+
+//3
+XPATH
+//footer//a[text()='GitHub' or @href='']
+CSS
+section.sitemap a[href*="https://github.com/webdriverio/webdriverio"]
