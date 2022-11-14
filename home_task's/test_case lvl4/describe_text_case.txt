@@ -4,7 +4,7 @@ Test cases https://github.com
 Title: go to GitHub and get title text then output in the console.
 
 1.Go to https://github.com.
-2.Get title text from page "https://github.com" and assert him.
+2.Get title text from page "https://github.com" with method getText() and assert him.
 3.Output the result to the console.
 
 Result: Text in console "Check title: GitHub: Let’s build from here · GitHub".
@@ -15,7 +15,7 @@ Title: go to GitHub check the visible status "Icons link". Output result in the 
 1.Go to https://github.com.
 2.Check is visible link "href="https://www.linkedin.com/company/github" with method isDisplayedInViewport , also for others.
 3.Output the result to the console.
-4.Scroll into view.
+4.Scroll into view with method scrollIntoView().
 5.Check is visible link "href="https://www.linkedin.com/company/github" with method isDisplayedInViewport , also for others.
 6.Output the result to the console.
 
@@ -33,27 +33,27 @@ Title: Go to GitHub check search-input status. Output result in the console.
 
 Result: Input is enabled: //true. Text written in input: "Input cheack"
 
-4.Test suit (go to https://github.com find the logo github)
+4.Test suit (go to https://github.com find the logo github).
 
 Title: go to GitHub find the github logo and get a screenshot.
 
-1.Go to https://github.blog
+1.Go to https://github.com.
 2.Find the logo GitHub with selector 'a [class="octicon octicon-mark-github"]'
 3.Get screenshot from this element with method saveScreenshot()
 4.Output the result to the console.
 
 Result: Screenshot logo GitHub.
 
-5.Test suit (login github.com)
+5.Test suit (login github.com).
 
 Title: signIn to GitHub with valid credentials.
 1.Go to https://github.com
-2.Click to "sign in" with selector 'a[href="/login"]'
+2.Click on "sign in" with selector 'a[href="/login"]'
 3.Go to https://github.com/login 
-4.Fill in the fields with login: "test" and password "test123"
-5.Use login field selector "#login_field" for setValue;
-6.Use password field selector "#password" for setValue;
-7.Click "Sign In" button.
+4.Use login field selector "#login_field" for setValue;
+5.Use password field selector "#password" for setValue;
+6.Fill in the fields with login: "test" and password "test123"
+7.Click on "Sign In" button.
 8.Wait 3 seconds.
 
 Result: Status login in the account.
